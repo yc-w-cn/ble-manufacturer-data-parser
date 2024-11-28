@@ -5,13 +5,13 @@ A utility for parsing Bluetooth manufacturer data to extract company information
 ## Installation
 
 ```bash
-pnpm add @yc-w-cn/ble-manufacturer-data-parser
+pnpm add ble-manufacturer-data-parser
 ```
 
 ## Usage
 
 ```ts
-import { parseBase64 } from "@yc-w-cn/ble-manufacturer-data-parser";
+import { parseBase64 } from "ble-manufacturer-data-parser";
 
 const output = parseBase64("pwWEayHudSUzo+k=");
 
