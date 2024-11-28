@@ -1,0 +1,43 @@
+{
+	"name": "ble-manufacturer-data-parser",
+	"version": "1.0.0",
+	"description": "A utility for parsing Bluetooth manufacturer data to extract company information.",
+	"author": "contact@wangyuchen.cn",
+	"main": "dist/index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/yc-w-cn/ble-manufacturer-data-parser.git"
+	},
+	"scripts": {
+		"prebuild": "rimraf dist",
+		"build": "tsc -p tsconfig.json",
+		"start": "node dist/index.js",
+		"test": "jest",
+		"test:coverage": "jest --coverage",
+		"generate": "pnpm tsx ./src/scripts/generateCompanyIdentifiers.ts"
+	},
+	"keywords": [
+		"typescript",
+		"ble",
+		"manufacturer-data"
+	],
+	"bugs": {
+		"url": "https://github.com/yc-w-cn/ble-manufacturer-data-parser/issues"
+	},
+	"homepage": "https://github.com/yc-w-cn/ble-manufacturer-data-parser/#readme",
+	"license": "MIT",
+	"packageManager": "pnpm@9.14.2",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/jest": "^29.5.14",
+		"@types/node": "^22.10.1",
+		"jest": "^29.7.0",
+		"rimraf": "^6.0.1",
+		"ts-jest": "^29.2.5",
+		"typescript": "^5.7.2",
+		"yaml": "^2.6.1"
+	},
+	"dependencies": {
+		"js-base64": "^3.7.7"
+	}
+}
