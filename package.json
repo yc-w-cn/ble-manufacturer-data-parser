@@ -1,6 +1,6 @@
 {
 	"name": "ble-manufacturer-data-parser",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A utility for parsing Bluetooth manufacturer data to extract company information.",
 	"author": "contact@wangyuchen.cn",
 	"main": "dist/index.js",
